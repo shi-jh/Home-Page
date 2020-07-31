@@ -1,9 +1,7 @@
 body{
   padding: 1px; 
-  margin: 0;
-  box-sizing: border-box;
+  margin: 0;  
   background: url('rythm.jpeg') no-repeat;   
-  background-size: cover;
   font-family: 'Times New Roman', Times, serif;  
 }
 a{
@@ -15,9 +13,9 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(229, 230, 240);
+  background-color: rgb(164, 164, 164);
   border-radius: 12px;
-  padding: 6px 8px;
+  padding: 2px 4px;
 }
 .navbar_log {
   max-width: 22%;  
@@ -39,18 +37,17 @@ a{
 .navbar_menu li:hover ol {
   display: flex;
   padding:  2px 12px;
-  font-size: 9px;
-  color: brown;
+  font-size: 8px;
 }
 .navbar_menu li:hover {
-  padding:  12px 12px;
-  background-color: rgb(203, 219, 159);
-  border-radius: 9px; 
+  padding:  2px 2px;
+  background-color: rgb(168, 168, 214);
+  border-radius: 9px;  
 }
 .navbar_links {
   display: flex;  
   list-style: none;
-  color: rgb(18, 9, 146);
+  color: rgb(215, 236, 19);
   padding-left: 0;
 } 
 .navbar_links li {
@@ -64,14 +61,8 @@ a{
   color: rgb(5, 5, 126);
  }
 .main {
-  display: flex;
-  max-width: 100vh;
-}
-#matrix-img {
-  width: 300%;
-  height: 500px;
-  opacity : 0.9; 
-  max-width: 150vh;
+  padding: 10px 2px;
+  background-size: cover;
 }
 #about{
   display: inline;
@@ -79,13 +70,16 @@ a{
   margin-left: 30px;
   position: relative;
 }
-#main_text{
+#mainTx{
   position: fixed;
-  text-size-adjust: 24px;
-  color: bisque;
-  margin : 76px 56px;
 }
-@media screen and (max-width: 666px){
+#main_text{
+  position: relative;
+  text-size-adjust: 28px;
+  color: bisque;
+  margin : 80px 70px;
+}
+@media screen and (max-width: 696px){
   .navbar{
     flex-direction: column;
     align-items: flex-start;
