@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Botanic System</title>
+  <style>
+    body{
+      background-color:skyblue;
+    }
+    .navbar{
+      display: flex;
+      font-size: 14px;
+      position: relative;
+      background-color: antiquewhite;    
+      padding: 5px 0px; 
+      border-radius: 5px;
+      justify-content: space-around;
+    }
+    .navbar #cbbtn {
+      position: right; 
+      border-radius: 5px;
+    }
+     .main{
+      all: unset;
+      font-family: 'Times New Roman', serif;
+      font-size: medium;
+      height: 100vh;
+      margin: 0px 2px;
+      border-color: black;
+    }
+    .main #main_img{
+      margin: 10px 30px;
+      border: 2px solid #222;
+      background-color: rgb(78, 185, 96); 
+    }
+    .main #main_img #img_text{
+      float: right;
+      margin: 10px 50px;
+      box-sizing: border-box;
+      background-color: rgb(241, 21, 168);
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 5px;
+      box-sizing: border-box;
+      border: 2px solid #999;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      resize: none;
+    }
+    .navbar #homeBtn{
+      border-radius: 5px;
+  }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+      <img src='connpath.png' width='99' height='36'><p></p>
+      <button id='homeBtn' href='index.html'> Home </button>
+      <a hidden href='#' >ConnPath</a>
+    </div>
+    <div class="main">
+      <img id='main_img' src='../cyberBotanic.png' width='650' height='411' >   
+     </div>                     
+    <form>
+      <textarea>
+        * 다양한 환경에서 재배가 가능한 모듈 설계 
+          - 벽형, 거치형, 연결형, 테이블형
+          - 생육 영상데이터 스트림 서비스 제공 
+        * 휴대폰 혹은 PC의 게임을 제공, IoT 기술을 접목하여 필요시 실시간 제공으로 소유 작물에 대한 사이버 공간 제공
+          - 작물의 생장 데이터 서비스 제공 : Mongo DB / Mariadb (Data)
+          - 마이크로 서비스 서버 구축  (N,A) 
+          >Back-end : NodeJS. Express(engine), Front end Module : React Native, Go (AI)
+        </textarea>
+    </form>
+  <script src='sub.js'></script>
+</body>
+</html>

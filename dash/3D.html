@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles1.css" rel="stylesheet" />
+  <style>
+   .SVM {
+      display: block;
+    }
+   .navbar{
+        display: flex;
+        font-size: 14px;
+        position: relative;
+        background-color: antiquewhite;    
+        padding: 5px 0px; 
+        border-radius: 5px;
+        justify-content: space-around;
+      }
+      .navbar #cbbtn {
+        position: right; 
+        border-radius: 5px;
+      }
+      .SVM_text {
+        border: bold black;
+        background-color: blueviolet;
+        padding: 10px 45px;
+        align-items: center;
+       }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src='connpath.png' width='99' height='36'><p></p>
+    <button id='homeBtn' href='index.html'> Home </button>
+    <a hidden href='#' >ConnPath</a>
+  </div>
+  <div class='SVM' id="attachment_462" style="width: 810px" class="wp-caption aligncenter">
+    <img aria-describedby="caption-attachment-462" src="http://www.semspirit.com//wp-content/uploads/sites/17154/2017/10/PY-SVR-model-capture-800x450-compress-50.gif" 
+    alt="3D graph of the SVM model3D graph of the SVM model" width="680" height="350" class="size-full wp-image-462">
+    <p id="caption-attachment-462" class="wp-caption-text">3D graph of the SVM model</p></div>  
+<form class='SVM_text'>
+  <textarea rows="14" cols="100">
+ ** Include Python Package   
+  - import pandas as pd
+  - import numpy as np
+  - from matplotlib import cm
+  - from matplotlib import pyplot
+  - from matplotlib.mlab import griddata
+  - from mpl_toolkits.mplot3d import Axes3D
+
+  Then we load the dataset
+  #loading the dataset
+    dataset = pd.read_csv('dataset.csv')
+    S = dataset.iloc[:,0:2].values
+    t = dataset.iloc[:,2].values
+    </textarea>
+</form>
+
+<script src='sub.js'></script>    
+</body>
+</html>
